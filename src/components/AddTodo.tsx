@@ -2,9 +2,7 @@ import { useContext } from "react";
 import { TodoContextType } from "../@types/todo";
 import { TodoContext } from "../context/store";
 
-export interface IAddTodoProps {}
-
-export default function AddTodo(props: IAddTodoProps) {
+export default function AddTodo() {
   const { newTask, setNewTask, addTask } = useContext(
     TodoContext
   ) as TodoContextType;
