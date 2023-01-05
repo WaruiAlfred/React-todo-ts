@@ -1,7 +1,11 @@
-import * as React from "react";
+import { Fragment } from "react";
 
-export interface IHeaderProps {}
-
-export default function Header(props: IHeaderProps) {
-  return <div></div>;
+export default function Header() {
+  return (
+    <Fragment>
+      <br />
+      <h2>My Todo(s)</h2>
+      <br />
+    </Fragment>
+  );
 }
