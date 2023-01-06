@@ -13,7 +13,7 @@ let todos = [
 const initialValues: TodoContextType = {
   todos: todos,
   newTask: "",
-  setTodo: (todo: ITodo) => {},
+  setTodo: (todo: ITodo | ITodo[]) => {},
   setNewTask: (task: string) => {},
   addTask: () => {},
   markTaskDone: (id: Number | String) => {},
