@@ -7,7 +7,7 @@ export interface ITodo {
 export type TodoContextType = {
   todos: ITodo[];
   newTask: string;
-  setTodo: (todo: ITodo) => void;
+  setTodo: (todo: ITodo | ITodo[]) => void;
   setNewTask: (task: string) => void;
   addTask: () => void;
   markTaskDone: (id: Number | String) => void;
