@@ -34,7 +34,7 @@ export default function Todos(props: ITodosProps) {
                 <div className={` iconsWrap ${task.status ? "undo" : ""}`}>
                   <span
                     onClick={() => markTaskDone(task.id)}
-                    title="Completed / Not Completed"
+                    title={task.status ? "Incomplete" : "Complete"}
                   >
                     <FontAwesomeIcon icon={faCircleCheck} />
                   </span>
